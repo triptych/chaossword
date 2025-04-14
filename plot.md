@@ -126,7 +126,7 @@ This document provides a comprehensive chapter-by-chapter outline for "The Chaos
 - Smells: Sea air mixed with sweat; oil used to clean weapons; Blackwood's expensive perfume
 - Taste: Blood from split lip during training; better food as Lyra gains status
 
-### Chapter 6: [ ] Unexpected Allies
+### Chapter 6: [x] Unexpected Allies
 
 **Plot Points:**
 - Lyra begins standing up for other captives, finding her voice
@@ -150,7 +150,7 @@ This document provides a comprehensive chapter-by-chapter outline for "The Chaos
 - Smells: Ozone scent before power manifestation; salt spray from the water
 - Shared sensations: Lyra and the sword both feeling the wind and spray during rescue
 
-### Chapter 7: [ ] Harbor Secrets
+### Chapter 7: [x] Harbor Secrets
 
 **Plot Points:**
 - The pirate fleet docks at a lawless harbor to trade and resupply
@@ -174,7 +174,7 @@ This document provides a comprehensive chapter-by-chapter outline for "The Chaos
 - Textures: Different fabrics from merchant stalls; cobblestone under feet instead of wood
 - Taste: First experience of foreign foods; stronger drinks than she's known before
 
-### Chapter 8: [ ] Ancient Pages
+### Chapter 8: [x] Ancient Pages
 
 **Plot Points:**
 - Fleet raids an ancient library seeking maps to the fourth artifact
@@ -198,7 +198,7 @@ This document provides a comprehensive chapter-by-chapter outline for "The Chaos
 - Textures: Delicate, crumbling paper; smooth marble worn by centuries of hands
 - Magical: The sword's memories appearing as vivid flashes of color and sensation
 
-### Chapter 9: [ ] Dreams of Fire
+### Chapter 9: [x] Dreams of Fire
 
 **Plot Points:**
 - Lyra experiences dreams showing the sword's memories of previous wielders
