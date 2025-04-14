@@ -6,4 +6,4 @@
 5. make sure to keep the writing style consistent with the previous chapters.
 6. when you are done writing the chapter, update the plot.md and check off the chapter as complete.
 7. update the loop.md CURRENT_CHAPTER variable to the next chapter number.
-CURRENT_CHAPTER = 10
+CURRENT_CHAPTER = 13

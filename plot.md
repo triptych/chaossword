@@ -222,7 +222,7 @@ This document provides a comprehensive chapter-by-chapter outline for "The Chaos
 - Taste/Smell: Burning sensation during dreams; ozone before manifestation of power
 - Shared emotions: The sword experiencing Lyra's grief for her village; Lyra feeling the sword's ancient loneliness
 
-### Chapter 10: [ ] Blood Tides
+### Chapter 10: [x] Blood Tides
 
 **Plot Points:**
 - The fleet attacks a coastal settlement to capture a tribal warrior compatible with the Earth artifact
@@ -246,7 +246,7 @@ This document provides a comprehensive chapter-by-chapter outline for "The Chaos
 - Physical: The sword vibrating with eagerness for battle yet hesitating at crucial moments
 - Taste: Bile rising when forced to fight; sweet water from village well contrasting violence
 
-### Chapter 11: [ ] Ritual Betrayal
+### Chapter 11: [x] Ritual Betrayal
 
 **Plot Points:**
 - Blackwood attempts a ritual to sever Lyra's bond with the sword
@@ -270,7 +270,7 @@ This document provides a comprehensive chapter-by-chapter outline for "The Chaos
 - Magical atmosphere: Air becoming thick; metallic taste intensifying; temperature fluctuations
 - After-effects: Visual afterimages; heightened senses; phantom pain lingering
 
-### Chapter 12: [ ] Adrift
+### Chapter 12: [x] Adrift
 
 **Plot Points:**
 - Lyra, Nari, and Thorn struggle to survive in a small boat during the storm
