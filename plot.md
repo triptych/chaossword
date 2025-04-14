@@ -294,7 +294,7 @@ This document provides a comprehensive chapter-by-chapter outline for "The Chaos
 - Taste/Smell: Salt water; fresh rain; first clean water on the island
 - Contrast: The peaceful island creating sensory relief after the chaos of the storm
 
-### Chapter 13: [ ] Trust Forged
+### Chapter 13: [x] Trust Forged
 
 **Plot Points:**
 - Surviving on the island while recovering from their ordeal
@@ -318,7 +318,7 @@ This document provides a comprehensive chapter-by-chapter outline for "The Chaos
 - Smells: Fresh vegetation; clean sea air; cooking fire
 - Shared moment: Lyra and Kais both experiencing a sunset with equal appreciation
 
-### Chapter 14: [ ] Port Haven
+### Chapter 14: [x] Port Haven
 
 **Plot Points:**
 - The group reaches a port town controlled by the Coastal Alliance
