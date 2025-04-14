@@ -78,7 +78,7 @@ This document provides a comprehensive chapter-by-chapter outline for "The Chaos
 - Textures: Sticky deck surfaces; cold metal of the sword; warm blood on palm
 - Taste: Metallic taste intensifying when the sword speaks; stale water from barrels
 
-### Chapter 4: [ ] Unwelcome Voices
+### Chapter 4: [x] Unwelcome Voices
 
 **Plot Points:**
 - Lyra struggles to hide her new bond as the sword constantly speaks in her mind
@@ -102,7 +102,7 @@ This document provides a comprehensive chapter-by-chapter outline for "The Chaos
 - Spatial: Claustrophobic ship quarters feeling even smaller with invasion of privacy
 - Taste: Persistent metallic taste whenever the sword speaks forcefully
 
-### Chapter 5: [ ] Unwilling Student
+### Chapter 5: [x] Unwilling Student
 
 **Plot Points:**
 - Instead of punishing Lyra, Blackwood begins training her in combat
