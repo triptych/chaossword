@@ -342,7 +342,7 @@ This document provides a comprehensive chapter-by-chapter outline for "The Chaos
 - Textures: Proper beds after sleeping rough; Wei's artifacts with similar patterns to Kais
 - Taste: First proper meal in civilization; bitter medicinal tea during historical discussions
 
-### Chapter 15: [ ] The Protector's Path
+### Chapter 15: [x] The Protector's Path
 
 **Plot Points:**
 - Wei helps Lyra understand how to communicate better with Kais
@@ -366,7 +366,7 @@ This document provides a comprehensive chapter-by-chapter outline for "The Chaos
 - Magical: Shared dreamspace during ritual where they appear as equals
 - Symbolic: Lyra voluntarily picking up Kais after having set it down safely during ritual
 
-### Chapter 16: [ ] Battle Plans
+### Chapter 16: [x] Battle Plans
 
 **Plot Points:**
 - Alliance provides a ship and small crew for their mission
@@ -390,7 +390,7 @@ This document provides a comprehensive chapter-by-chapter outline for "The Chaos
 - Smells: Fresh sail canvas; naval supplies; sea air as they prepare to leave
 - Textures: Alliance uniforms different from pirate garb; ceremonial sword oil for Kais
 
-### Chapter 17: [ ] Waves of Change
+### Chapter 17: [x] Waves of Change
 
 **Plot Points:**
 - Journey at sea tracking Blackwood's fleet
@@ -414,7 +414,7 @@ This document provides a comprehensive chapter-by-chapter outline for "The Chaos
 - Magical: Protective energy feeling cooling and stabilizing rather than hot and destructive
 - Weather: Storm clearing as they master protection, symbolizing their transformation
 
-### Chapter 18: [ ] First Confrontation
+### Chapter 18: [x] First Confrontation
 
 **Plot Points:**
 - Initial skirmish with outlying ships from Blackwood's fleet
@@ -438,7 +438,7 @@ This document provides a comprehensive chapter-by-chapter outline for "The Chaos
 - Weather elements: Kais helping control wind and waves during ship maneuvers
 - Mental: First experience of artifact-to-artifact communication between Kais and Chalice
 
-### Chapter 19: [ ] Darkness and Light
+### Chapter 19: [x] Darkness and Light
 
 **Plot Points:**
 - Strategic nighttime mission to rescue hostages
@@ -462,7 +462,7 @@ This document provides a comprehensive chapter-by-chapter outline for "The Chaos
 - Smells: Dank ship hold; unwashed prisoners; torch smoke during escape
 - Contrast: Darkness of mission setting versus growing light of their purpose
 
-### Chapter 20: [ ] The Final Artifact
+### Chapter 20: [x] The Final Artifact
 
 **Plot Points:**
 - Alliance council debates direct assault on Blackwood's fleet
@@ -486,7 +486,7 @@ This document provides a comprehensive chapter-by-chapter outline for "The Chaos
 - Smells: Earth elements—clay, moss, crushed stone in ritual components
 - Contrast: Root's chaotic earth energy versus structured ritual containment
 
-### Chapter 21: [ ] Harbor Defense
+### Chapter 21: [x] Harbor Defense
 
 **Plot Points:**
 - Blackwood's fleet attacks the Alliance harbor with full force
@@ -510,7 +510,7 @@ This document provides a comprehensive chapter-by-chapter outline for "The Chaos
 - Magical: Artifacts sensing each other across battle lines; resonance creating disruption
 - Aftermath: Smoke; destruction; healing energy Lyra didn't know she could channel
 
-### Chapter 22: [ ] The Heart of Chaos
+### Chapter 22: [x] The Heart of Chaos
 
 **Plot Points:**
 - Planning final confrontation to rescue Nari and end Blackwood's threat
@@ -534,7 +534,7 @@ This document provides a comprehensive chapter-by-chapter outline for "The Chaos
 - Symbolic: Lyra's dreams now showing protection rather than destruction
 - Weather: Clear skies and calm seas as if nature itself supports their mission
 
-### Chapter 23: [ ] Balance Restored
+### Chapter 23: [x] Balance Restored
 
 **Plot Points:**
 - Final battle with Blackwood's fleet
@@ -560,7 +560,7 @@ This document provides a comprehensive chapter-by-chapter outline for "The Chaos
 - Magical: Brief connection to The Veil Between during ritual
 - Aftermath: New equilibrium with enhanced senses; ability to perceive magical currents
 
-### Chapter 24: [ ] Protector of Boundaries
+### Chapter 24: [x] Protector of Boundaries
 
 **Plot Points:**
 - Aftermath of the final battle
