@@ -248,6 +248,27 @@ nav ul li a:hover::after {
     box-shadow: 0 5px 15px rgba(212, 161, 59, 0.3);
 }
 
+.download-formats {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.download-formats p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.download-formats a {
+    color: var(--secondary-color);
+    transition: all 0.2s ease;
+    padding: 0 5px;
+}
+
+.download-formats a:hover {
+    color: var(--water-order-light);
+    text-decoration: underline;
+}
+
 /* === Story Section === */
 .story-section {
     background-color: var(--light-bg);
@@ -629,5 +650,13 @@ footer {
 
     .cta-button {
         text-align: center;
+    }
+
+    .download-formats {
+        margin-top: 2rem;
+    }
+
+    .download-formats p {
+        font-size: 0.85rem;
     }
 }
