@@ -1,0 +1,633 @@
+/* The Chaos Sword Website Styles */
+
+/* === Base Styles === */
+:root {
+    --fire-chaos: #e74c3c;
+    --fire-chaos-light: #ff7763;
+    --water-order: #3498db;
+    --water-order-light: #7cc3ff;
+    --air-knowledge: #f1c40f;
+    --air-knowledge-light: #ffe066;
+    --earth-stability: #2ecc71;
+    --earth-stability-light: #7defa1;
+
+    --primary-color: #3a7bd5; /* Blue-gold fusion: blue component */
+    --secondary-color: #d4a13b; /* Blue-gold fusion: gold component */
+    --dark-bg: #1a1a2e;
+    --light-bg: #f7f7f7;
+    --text-light: #f7f7f7;
+    --text-dark: #333333;
+
+    --font-heading: 'Cinzel', serif;
+    --font-body: 'Lato', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--dark-bg);
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"%3E%3Cpath fill="%231a1a2e" d="M0,0 L100,0 L100,100 L0,100 Z"%3E%3C/path%3E%3Cpath fill="%23162447" opacity="0.7" d="M0,0 C30,40 70,40 100,0 L100,100 L0,100 Z"%3E%3C/path%3E%3C/svg%3E');
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+/* === Header and Navigation === */
+header {
+    background-color: rgba(26, 26, 46, 0.9);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: var(--text-light);
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* === Hero Section === */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    z-index: 2;
+    width: 90%;
+    max-width: 1200px;
+    padding: 2rem;
+}
+
+.book-cover {
+    max-width: 350px;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5),
+                0 0 20px rgba(58, 123, 213, 0.3),
+                0 0 40px rgba(212, 161, 59, 0.2);
+    transform: rotate(-3deg);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.book-cover:hover {
+    transform: rotate(0deg) scale(1.03);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6),
+                0 0 30px rgba(58, 123, 213, 0.4),
+                0 0 60px rgba(212, 161, 59, 0.3);
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.tagline {
+    font-style: italic;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.cta-button {
+    padding: 0.8rem 1.5rem;
+    border-radius: 3px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.cta-button.primary {
+    background: linear-gradient(135deg, var(--primary-color), var(--water-order-light));
+    color: var(--text-light);
+}
+
+.cta-button.secondary {
+    background: transparent;
+    color: var(--text-light);
+    border: 2px solid var(--secondary-color);
+}
+
+.cta-button.primary:hover {
+    background: linear-gradient(135deg, var(--water-order-light), var(--primary-color));
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(58, 123, 213, 0.4);
+}
+
+.cta-button.secondary:hover {
+    background-color: rgba(212, 161, 59, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(212, 161, 59, 0.3);
+}
+
+/* === Story Section === */
+.story-section {
+    background-color: var(--light-bg);
+    padding: 5rem 0;
+    position: relative;
+}
+
+.story-section h2 {
+    text-align: center;
+    color: var(--dark-bg);
+}
+
+.story-content {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.story-text {
+    flex: 2;
+    min-width: 300px;
+}
+
+.story-quote {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    align-items: center;
+}
+
+blockquote {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-style: italic;
+    color: var(--primary-color);
+    line-height: 1.6;
+    position: relative;
+    padding: 1rem 2rem;
+    border-left: 4px solid var(--secondary-color);
+    background-color: rgba(247, 247, 247, 0.7);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+blockquote::before {
+    content: "\201C";
+    font-size: 4rem;
+    font-family: Georgia, serif;
+    position: absolute;
+    left: -10px;
+    top: -20px;
+    color: rgba(58, 123, 213, 0.2);
+}
+
+/* === Characters Section === */
+.characters-section {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    padding: 5rem 0;
+    position: relative;
+}
+
+.characters-section h2 {
+    text-align: center;
+    color: var(--text-light);
+}
+
+.character-cards {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.character-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    padding: 2rem;
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.character-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
+
+.character-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.character-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.sword-icon {
+    background: linear-gradient(135deg, var(--fire-chaos), var(--fire-chaos-light));
+}
+
+.artifact-icon {
+    background: linear-gradient(135deg, var(--primary-color), var(--water-order-light));
+}
+
+.villain-icon {
+    background: linear-gradient(135deg, #2c3e50, #4a6282);
+}
+
+.ally-icon {
+    background: linear-gradient(135deg, var(--air-knowledge), var(--air-knowledge-light));
+}
+
+.character-card h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* === World Section === */
+.world-section {
+    background-color: var(--light-bg);
+    padding: 5rem 0;
+    position: relative;
+}
+
+.world-section h2 {
+    text-align: center;
+    color: var(--dark-bg);
+}
+
+.world-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.magic-system h3, .artifacts h3 {
+    color: var(--dark-bg);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.elements-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.element {
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.element:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.element h4 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.fire {
+    background: linear-gradient(to bottom, rgba(231, 76, 60, 0.1), rgba(231, 76, 60, 0.02));
+    border-left: 3px solid var(--fire-chaos);
+}
+
+.water {
+    background: linear-gradient(to bottom, rgba(52, 152, 219, 0.1), rgba(52, 152, 219, 0.02));
+    border-left: 3px solid var(--water-order);
+}
+
+.air {
+    background: linear-gradient(to bottom, rgba(241, 196, 15, 0.1), rgba(241, 196, 15, 0.02));
+    border-left: 3px solid var(--air-knowledge);
+}
+
+.earth {
+    background: linear-gradient(to bottom, rgba(46, 204, 113, 0.1), rgba(46, 204, 113, 0.02));
+    border-left: 3px solid var(--earth-stability);
+}
+
+.artifacts {
+    margin-top: 2rem;
+}
+
+.artifact-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.artifact-list li {
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.artifact-list li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.artifact-name {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* === Author Section === */
+.author-section {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    padding: 5rem 0;
+    position: relative;
+}
+
+.author-section h2 {
+    text-align: center;
+    color: var(--text-light);
+}
+
+.author-content {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.author-image {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.author-placeholder {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.author-bio {
+    flex: 2;
+    min-width: 300px;
+}
+
+.social-links {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.social-link {
+    padding: 0.5rem 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    color: var(--text-light);
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+/* === Footer === */
+footer {
+    background-color: rgba(26, 26, 46, 0.95);
+    color: var(--text-light);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-links a:hover {
+    color: var(--secondary-color);
+}
+
+/* === Background Effects === */
+.bg-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle at 20% 50%, rgba(58, 123, 213, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 30%, rgba(212, 161, 59, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* === Responsive Styles === */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .story-content, .author-content {
+        flex-direction: column;
+    }
+
+    .book-cover {
+        transform: rotate(0);
+    }
+
+    .character-card, .element {
+        min-width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+
+    .hero {
+        padding-top: 80px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cta-button {
+        text-align: center;
+    }
+}
