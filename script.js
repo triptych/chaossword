@@ -1,6 +1,118 @@
 // The Chaos Sword Website JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Custom Sword Cursor Implementation
+    function initCustomCursor() {
+        // Add the sword-cursor class to the body for global cursor control
+        document.body.classList.add('sword-cursor');
+
+        // Create sword cursor element using SVG
+        const cursor = document.createElement('div');
+        cursor.classList.add('custom-cursor');
+
+        // Create SVG sword using data URI
+        const swordSvg = `
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+            <g transform="rotate(-15, 16, 16)">
+                <!-- Sword handle -->
+                <rect x="14" y="20" width="4" height="8" rx="1" fill="#8B4513" />
+                <rect x="13" y="19" width="6" height="2" rx="1" fill="#d4a13b" />
+
+                <!-- Guard -->
+                <rect x="8" y="18" width="16" height="2" rx="1" fill="#d4a13b" />
+
+                <!-- Blade -->
+                <path d="M16,18 L16,3 L19,6 L16,4 L13,6 L16,3 Z" fill="#e0e0e0" />
+
+                <!-- Blade shine -->
+                <path d="M16,18 L16,3 L17,5 L16,4 Z" fill="#ffffff" opacity="0.7" />
+            </g>
+
+            <!-- Magical glow -->
+            <circle cx="16" cy="16" r="14" fill="url(#glow)" opacity="0.2" />
+
+            <!-- Gradients for glow -->
+            <defs>
+                <radialGradient id="glow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                    <stop offset="0%" stop-color="#3a7bd5" stop-opacity="0.8" />
+                    <stop offset="100%" stop-color="#3a7bd5" stop-opacity="0" />
+                </radialGradient>
+            </defs>
+        </svg>
+        `;
+
+        // Set the cursor content
+        cursor.innerHTML = swordSvg;
+        document.body.appendChild(cursor);
+
+        // Track mouse movement to update cursor position
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = `${e.clientX}px`;
+            cursor.style.top = `${e.clientY}px`;
+
+            // Create magical particles with each mouse movement
+            createMagicalParticle(e.clientX, e.clientY);
+        });
+
+        // Ensure cursor is visible when entering window
+        document.addEventListener('mouseenter', (e) => {
+            cursor.style.display = 'block';
+        });
+
+        // Hide cursor when leaving window
+        document.addEventListener('mouseleave', (e) => {
+            cursor.style.display = 'none';
+        });
+    }
+
+    // Function to create magical particles
+    function createMagicalParticle(x, y) {
+        // Don't create particles on every mouse movement to avoid overloading
+        if (Math.random() > 0.3) return;
+
+        const particle = document.createElement('div');
+        particle.classList.add('cursor-particle');
+
+        // Random size for particles
+        const size = Math.random() * 6 + 3;
+        particle.style.width = `${size}px`;
+        particle.style.height = `${size}px`;
+
+        // Set initial position at cursor
+        particle.style.left = `${x}px`;
+        particle.style.top = `${y}px`;
+
+        // Create random movement direction
+        const tx = (Math.random() - 0.5) * 40;
+        const ty = (Math.random() - 0.5) * 40;
+        particle.style.setProperty('--tx', `${tx}px`);
+        particle.style.setProperty('--ty', `${ty}px`);
+
+        // Random color for particles (magical effect)
+        const colors = [
+            'rgba(58, 123, 213, 0.8)',    // Primary blue
+            'rgba(212, 161, 59, 0.8)',    // Secondary gold
+            'rgba(231, 76, 60, 0.8)',     // Fire red
+            'rgba(52, 152, 219, 0.8)',    // Water blue
+            'rgba(241, 196, 15, 0.8)',    // Air yellow
+            'rgba(46, 204, 113, 0.8)'     // Earth green
+        ];
+
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        particle.style.backgroundColor = color;
+        particle.style.boxShadow = `0 0 ${size}px ${color}`;
+
+        // Add to DOM
+        document.body.appendChild(particle);
+
+        // Remove after animation completes
+        setTimeout(() => {
+            particle.remove();
+        }, 1000);
+    }
+
+    // Initialize the custom cursor
+    initCustomCursor();
     // Navigation highlighting on scroll
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('nav ul li a');
