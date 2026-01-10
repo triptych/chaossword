@@ -6,9 +6,11 @@ Lyra's memories of that night remained fragmented—flashes of brilliance agains
 
 What followed was confusion—Blackwood ordering her officers to secure the artifact, the stone-shapers raising barriers of living rock, Tam's wide-eyed panic as the Root began to glow with unstable energy. Lyra remembered Vex unleashing water magic that carved channels through stone, remembered Ilaria whispering secrets that turned allies against each other.
 
-And she remembered the sword, Kais, urging restraint rather than bloodshed as they helped Tam escape the crossfire.
+And she remembered the sword, Kais, urging restraint rather than bloodshed as they helped secure the ritual chamber. In the chaos, she'd seen Tam being dragged back by Koric—the boy's attempted escape to Alliance boats thwarted before it truly began.
 
-Now, three days later, the *Tempest* cut through dark waters, leading a reduced fleet away from the Northern Archipelago. The confrontation had cost Blackwood two ships and several crew members, though she had ultimately secured her prize—the Root of Stone, dormant in its ceremonial container, had been successfully extracted in the chaos. Tam too had been recaptured, though the boy remained in an exhausted slumber, the interrupted bonding having drained his young body's resources.
+The escape from the island itself had been a frantic blur—Blackwood's crews fighting a desperate rearguard action against Alliance forces while securing both the Root of Stone and their ships. The pirates had withdrawn through a narrow channel on the far side of the island, one that only Nari's exceptional navigation skills made passable in the darkness. They'd lost two ships to Alliance pursuit and rocky shoals, but Blackwood had preserved what mattered most to her: the artifact and its potential wielder.
+
+Now, three days later, the *Tempest* cut through dark waters, leading a reduced fleet away from the Northern Archipelago. The confrontation had cost Blackwood two ships and several crew members, though she had ultimately secured her prize—the Root of Stone, dormant in its ceremonial container, had been successfully extracted in the chaos. Tam too had been recaptured after his brief escape attempt, though the boy remained in an exhausted slumber, the interrupted bonding having drained his young body's resources.
 
 Lyra stood at the starboard rail, watching distant islands emerge from morning mist. The sword hung comfortably against her back, its weight now familiar, almost reassuring.
 
