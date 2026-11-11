@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Chaos Sword — Interactive Movie</title>
+    <meta name="description" content="An interactive 3D scene-by-scene movie of The Chaos Sword by Andrew Wooldridge.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+        }
+    }
+    </script>
+</head>
+<body>
+    <canvas id="stage" aria-label="3D scene"></canvas>
+
+    <!-- vignette + flash layers -->
+    <div id="vignette" aria-hidden="true"></div>
+    <div id="flash" aria-hidden="true"></div>
+    <div id="fade" aria-hidden="true"></div>
+
+    <!-- Interaction hint marker that follows a 3D target -->
+    <div id="marker" aria-hidden="true"><span></span></div>
+
+    <!-- HUD -->
+    <div id="hud">
+        <div id="hud-act"></div>
+        <div id="hud-buttons">
+            <button id="btn-auto" class="hud-btn" title="Autoplay (A)" aria-pressed="false">Auto</button>
+            <button id="btn-mute" class="hud-btn" title="Mute (M)" aria-pressed="false">Sound</button>
+            <button id="btn-menu" class="hud-btn" title="Chapters (Esc)">Chapters</button>
+        </div>
+    </div>
+
+    <div id="counter" class="hidden"></div>
+
+    <!-- Title card -->
+    <div id="titlecard" class="hidden">
+        <p class="tc-chapter"></p>
+        <h2 class="tc-title"></h2>
+        <div class="tc-rule"></div>
+    </div>
+
+    <!-- Caption / dialogue box -->
+    <div id="caption" class="hidden" role="status" aria-live="polite">
+        <div class="cap-speaker"></div>
+        <div class="cap-text"></div>
+        <div class="cap-next" aria-hidden="true">&#9662;</div>
+    </div>
+
+    <!-- Interaction prompt -->
+    <div id="prompt" class="hidden">
+        <p class="prompt-text"></p>
+        <div class="meter hidden"><div class="meter-fill"></div></div>
+        <div class="choices"></div>
+    </div>
+
+    <!-- Start screen -->
+    <section id="start" class="screen">
+        <div class="screen-inner">
+            <p class="eyebrow">An interactive movie</p>
+            <h1>The Chaos Sword</h1>
+            <p class="byline">from the novel by Andrew Wooldridge</p>
+            <p class="tagline">"Some bonds are forged in blood, others in fire. Theirs was made of both."</p>
+            <button id="btn-begin" class="big-btn" disabled>Loading&hellip;</button>
+            <p class="help">Click or press <kbd>Space</kbd> to advance &middot; <kbd>A</kbd> autoplay &middot; <kbd>M</kbd> mute &middot; <kbd>Esc</kbd> chapters<br>Headphones recommended.</p>
+            <a class="back-link" href="../index.html">&larr; Back to the book site</a>
+        </div>
+    </section>
+
+    <!-- Chapter menu -->
+    <section id="menu" class="screen hidden">
+        <div class="screen-inner">
+            <h2>Scenes</h2>
+            <ol id="menu-list"></ol>
+            <button id="btn-close-menu" class="big-btn small">Resume</button>
+        </div>
+    </section>
+
+    <!-- End screen -->
+    <section id="end" class="screen hidden">
+        <div class="screen-inner">
+            <p class="eyebrow">Fin</p>
+            <h1>The Chaos Sword</h1>
+            <p class="byline">by Andrew Wooldridge</p>
+            <p class="tagline">"To boundaries. And to those who protect them."</p>
+            <div class="end-actions">
+                <a class="big-btn" href="../output/TheChaosSword.html">Read the novel</a>
+                <button id="btn-replay" class="big-btn ghost">Replay</button>
+            </div>
+            <a class="back-link" href="../index.html">&larr; Back to the book site</a>
+        </div>
+    </section>
+
+    <noscript><p class="noscript">This interactive movie needs JavaScript and WebGL.</p></noscript>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
